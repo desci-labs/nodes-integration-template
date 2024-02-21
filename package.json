@@ -1,0 +1,29 @@
+{
+  "name": "nodes-integration-template",
+  "version": "1.0.0",
+  "description": "Template project for building against DeSci Nodes using nodes-lib",
+  "type": "module",
+  "scripts": {
+    "getEnv": "cp node_modules/@desci-labs/nodes-lib/.env.example .env",
+    "demo": "tsx src/demo.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desci-labs/nodes-integration-template.git"
+  },
+  "author": "Edvard Hübinette",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/desci-labs/nodes-integration-template/issues"
+  },
+  "homepage": "https://github.com/desci-labs/nodes-integration-template#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@desci-labs/nodes-lib": "^0.0.1",
+    "dotenv": "^16.4.4"
+  }
+}

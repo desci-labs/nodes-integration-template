@@ -1,0 +1,11 @@
+{
+  /** https://www.typescriptlang.org/docs/handbook/modules/guides/choosing-compiler-options.html */
+  "compilerOptions": {
+    "module": "node16",
+    "noEmit": true,
+
+    /** Misc hygiene */
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true
+  }
+}
