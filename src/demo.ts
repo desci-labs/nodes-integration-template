@@ -2,7 +2,7 @@ import { createDraftNode, publishDraftNode, setApiKey, updateCoverImage, uploadF
 import { signerFromPkey } from "@desci-labs/nodes-lib/dist/util/signing.js";
 
 const main = async () => {
-  setApiKey(process.env.API_KEY)
+  setApiKey(process.env.NODES_API_KEY)
   const { node: { uuid }}= await createDraftNode({
     title: "Trial node",
     defaultLicense: "CC-BY-4.0",
@@ -22,7 +22,7 @@ const main = async () => {
     "bafkreidivzimqfqtoqxkrpge6bjyhlvxqs3rhe73owtmdulaxr5do5in7u" // a nice cat
   );
 
-  const signer = signerFromPkey(process.env.PKEY)
+  const signer = signerFromPkey(process.env.PUBLISH_PKEY)
   await publishDraftNode(uuid, signer);
 };
 
