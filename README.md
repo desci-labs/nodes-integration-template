@@ -5,14 +5,14 @@ This repo is a stub which can be used as a base for integrating with Nodes via `
 > The documentation of [@desci-labs/nodes-lib](https://github.com/desci-labs/nodes/tree/develop/nodes-lib) is a recommended read to figure out configuration and get an idea of the featureas available. Library API docs are available at [desci-labs.github.io/nodes](https://desci-labs.github.io/nodes).
 
 ## Configuration
-`nodes-lib` requires some configuration to be set through the environment.
-Execute this command to copy the example `.env` from `nodes-lib` to this project:
+Two values need to be set in the environment for this demo to run:
 
 ```bash
-npm run getEnv
+# public key to account holding some funds for gas on Sepolia
+export PUBLISH_PKEY=3a0acb121e4545...
+# API key as generated in your profile at https://nodes-dev.desci.com/profile
+export NODES_API_KEY=2YblL6kW...
 ```
-
-Then, read the `.env` file and set the correct values. In particular, you need to generate an API key at [nodes-dev.desci.com](https://nodes-dev.desci.com) in your profile after creating an account.
 
 ## Usage
 There is a template file called `demo.ts`, which shows how to create a draft node and make some changes. After setting up the environment, you should be able to run `npm run demo` and then view a freshly created node over at `https://nodes-dev.desci.com`.

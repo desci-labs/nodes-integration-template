@@ -4,7 +4,6 @@
   "description": "Template project for building against DeSci Nodes using nodes-lib",
   "type": "module",
   "scripts": {
-    "getEnv": "cp node_modules/@desci-labs/nodes-lib/.env.example .env",
     "demo": "tsx src/demo.ts"
   },
   "repository": {
@@ -23,7 +22,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@desci-labs/nodes-lib": "^0.0.3",
+    "@desci-labs/nodes-lib": "^0.0.6",
     "dotenv": "^16.4.4"
   }
 }
