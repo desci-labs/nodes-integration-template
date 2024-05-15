@@ -22,7 +22,6 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@desci-labs/nodes-lib": "^0.0.6",
-    "dotenv": "^16.4.4"
+    "@desci-labs/nodes-lib": "^0.0.6"
   }
 }
